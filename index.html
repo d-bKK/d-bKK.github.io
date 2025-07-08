@@ -93,7 +93,19 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><strong>test</strong></p>
+        <h1 id="新建笔记"><a href="#新建笔记" class="headerlink" title="新建笔记"></a>新建笔记</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<p><code>layout</code> : 可选三种布局，分别是<code>post</code>、<code>page</code>、<code>draft</code>，默认是<code>post</code><br><code>title</code> : 即文章标题</p>
+<h2 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h2><p>在使用<code>draft</code>布局写作之后，需要用<code>hexo publish</code>命令将草稿发布，相当于从<code>_draft</code>文件夹移动到<code>_post</code>文件夹</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="将文章更新至博客网站中"><a href="#将文章更新至博客网站中" class="headerlink" title="将文章更新至博客网站中"></a>将文章更新至博客网站中</h1><h2 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br></pre></td></tr></table></figure>
+<p>等同于<code>hexo generate</code></p>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>在本地运行博客用于测试</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h2 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h2><p>也可以将上面两条命令合并为一条命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><p>如果运行hexo命令一直出现help信息，可能是因为没有在hexo根目录下</p>
 
       
     </div>
